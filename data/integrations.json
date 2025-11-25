@@ -1,22 +1,22 @@
 [
   {
-    "name": "Pasarela de Pagos",
-    "summary": "Sincronización de órdenes, conciliación automática, manejo de devoluciones y fraudes.",
-    "protocols": ["REST","OAuth2","Webhooks"]
+    "name": "API Fiscal Bridge",
+    "summary": "Sincronización de datos fiscales y validaciones automáticas entre sistemas primario y secundario.",
+    "protocols": ["REST","OAuth2","Retry"]
   },
   {
-    "name": "Logística & Tracking",
-    "summary": "Cálculo dinámico de tarifas, actualización de estados y eventos de entrega.",
-    "protocols": ["REST","Webhook","HMAC"]
+    "name": "Carrier & Tracking Hub",
+    "summary": "Unificación de tracking y cotización de múltiples proveedores logísticos con normalización de estados.",
+    "protocols": ["REST","Webhooks","HMAC"]
   },
   {
-    "name": "BI & Data Warehouse",
-    "summary": "Extracción incremental y normalización hacia esquema analítico estrella.",
-    "protocols": ["ETL","Batch","Incremental"]
+    "name": "Multi-API Orchestrator",
+    "summary": "Capa de orquestación con manejo de rate limits, circuit breaker y logging estructurado.",
+    "protocols": ["REST","Queue","CircuitBreaker"]
   },
   {
-    "name": "Marketplace Multicanal",
-    "summary": "Unificación de pedidos, stock y precios con reglas de prioridad.",
-    "protocols": ["REST","Rate Limit Handling","Retry"]
+    "name": "Finanzas & Visibilidad",
+    "summary": "Extracción incremental y visualización de capital comprometido y flujos de compra.",
+    "protocols": ["Incremental","ETL","Batch"]
   }
 ]

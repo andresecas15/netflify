@@ -1,32 +1,44 @@
 [
   {
-    "title": "Optimización Backend Odoo",
-    "description": "Refactor de módulos heredados, reducción de tiempo de respuesta 40%, implementación de caché selectivo y lazy loads.",
-    "categories": ["odoo","performance"],
-    "stack": ["Python","PostgreSQL","Odoo ORM","Redis"]
+    "title": "Odoo Bridge Financiero",
+    "description": "Conexión dual entre sistemas para automatizar declaraciones y sincronizar saldos con validaciones fiscales.",
+    "categories": ["finanzas","integraciones"],
+    "stack": ["Python","REST","OAuth2","PostgreSQL"]
   },
   {
-    "title": "Conector ERP - E-commerce",
-    "description": "Sincronización de catálogo, stock y pedidos con manejo de colisiones y reconcilio automático.",
-    "categories": ["odoo","api"],
-    "stack": ["REST","Webhooks","Message Queue","Odoo"]
+    "title": "Triangulación de Fondos",
+    "description": "Tablero CRM para seguimiento de compras en tránsito, capital comprometido y visibilidad multi-etapa.",
+    "categories": ["finanzas","optimización"],
+    "stack": ["Odoo","QWeb","OWL","PostgreSQL"]
   },
   {
-    "title": "Pipeline Facturación Electrónica",
-    "description": "Integración con API gubernamental, colas de reintento y firma digital.",
-    "categories": ["api","odoo"],
-    "stack": ["Python","Cryptography","REST","Celery"]
+    "title": "Surtex Mantenimiento",
+    "description": "Gestión de requisiciones de repuestos con control de ciclo, aprobaciones y prioridades logísticas.",
+    "categories": ["logistica","optimización"],
+    "stack": ["Odoo","Python","ORM","PostgreSQL"]
   },
   {
-    "title": "Monitor de Integraciones",
-    "description": "Dashboard de métricas y alertas (latencia, throughput, fallos) + trazas correlacionadas.",
-    "categories": ["performance","api"],
-    "stack": ["Prometheus","Grafana","Fluentd","PostgreSQL"]
+    "title": "TruckFlow Control de Viajes",
+    "description": "Módulo para planificación, trazabilidad y costos por ruta con KPIs de rendimiento.",
+    "categories": ["logistica"],
+    "stack": ["Odoo","Python","Reportes","Grafana"]
   },
   {
-    "title": "Módulo de Suscripciones",
-    "description": "Modelo de negocio recurrente con prorrateos y renovaciones automáticas escalables.",
-    "categories": ["odoo"],
-    "stack": ["Odoo","Python","QWeb","Stripe API"]
+    "title": "MRW Connect",
+    "description": "Integración con servicio de tracking y cotización de envíos, manejo de reintentos y excepciones.",
+    "categories": ["logistica","integraciones"],
+    "stack": ["REST","Webhooks","HMAC","Odoo"]
+  },
+  {
+    "title": "Conectores Multi-API",
+    "description": "Framework interno para estandarizar autenticación, rate limiting y trazabilidad de integraciones.",
+    "categories": ["integraciones","optimización"],
+    "stack": ["Python","Redis","Message Queue","Logging"]
+  },
+  {
+    "title": "Optimización Core Odoo",
+    "description": "Refactor y reducción de tiempos críticos con índices, lazy loads y profiling sistemático.",
+    "categories": ["optimización"],
+    "stack": ["Python","PostgreSQL","Profiling","Caching"]
   }
 ]

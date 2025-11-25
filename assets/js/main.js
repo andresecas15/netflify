@@ -38,7 +38,7 @@ function renderProjects() {
         <h3>${p.title}</h3>
         <p>${p.description}</p>
         <div class="tags">
-          ${p.categories.map(c => `<span class="tag ${c === 'performance' ? 'highlight':''}">${c}</span>`).join('')}
+          ${p.categories.map(c => `<span class="tag ${c === 'finanzas' ? 'highlight':''}">${c}</span>`).join('')}
         </div>
         <small>Stack: ${p.stack.join(', ')}</small>
       `;
