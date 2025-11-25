@@ -8,6 +8,8 @@
   <meta name="robots" content="index,follow"/>
   <link rel="preload" href="assets/css/style.css" as="style"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
+  <!-- Preload foto perfil -->
+  <link rel="preload" href="assets/img/logica-cero.png" as="image" imagesrcset="assets/img/logica-cero.jpg 1x"/>
 </head>
 <body>
 <header class="site-header">
@@ -54,6 +56,20 @@
 </section>
 <section id="equipo" class="panel alt">
   <h2>Génesis & Experiencia del Equipo</h2>
+  <figure class="profile-card fade-in">
+    <img
+      src="assets/img/logica-cero.jpg"
+      alt="Foto de perfil - Lógica Cero"
+      class="avatar"
+      loading="lazy"
+      width="560"
+      height="560"
+    />
+    <figcaption>
+      <strong>Lógica Cero</strong><br/>
+      Desarrollador Odoo & Integrador API
+    </figcaption>
+  </figure>
   <ul class="cert-list">
     <li>Consultoría funcional inicial: comprensión profunda de procesos.</li>
     <li>Liderazgo técnico: visión end-to-end de implementaciones.</li>

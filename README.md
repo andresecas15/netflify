@@ -70,3 +70,6 @@ Mejoras futuras:
 
 ## Actualización Web
 Todo el contenido de la página (index.html, data/*.json) refleja la propuesta de valor, casos y estructura económica de Lógica Cero.
+
+### Activos
+- Coloca tu foto en: assets/img/logica-cero.jpg (ideal 800x800, recortada cuadrada).
