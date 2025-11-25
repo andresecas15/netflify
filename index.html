@@ -8,8 +8,6 @@
   <meta name="robots" content="index,follow"/>
   <link rel="preload" href="assets/css/style.css" as="style"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
-  <!-- Preload foto perfil -->
-  <link rel="preload" href="assets/img/logica-cero.png" as="image" imagesrcset="assets/img/logica-cero.png 1x"/>
 </head>
 <body>
 <header class="site-header">
@@ -57,14 +55,19 @@
 <section id="equipo" class="panel alt">
   <h2>Génesis & Experiencia del Equipo</h2>
   <figure class="profile-card fade-in">
-    <img
-      src="assets/img/logica-cero.jpg"
-      alt="Foto de perfil - Lógica Cero"
-      class="avatar"
-      loading="lazy"
-      width="560"
-      height="560"
-    />
+    <picture>
+      <source srcset="assets/img/logica-cero.webp" type="image/webp"/>
+      <source srcset="assets/img/logica-cero.png" type="image/png"/>
+      <img
+        src="assets/img/logica-cero.jpg"
+        alt="Foto de perfil de Lógica Cero"
+        class="avatar"
+        loading="lazy"
+        width="560"
+        height="560"
+        onerror="this.onerror=null; this.src='assets/img/logica-cero.png';"
+      />
+    </picture>
     <figcaption>
       <strong>Lógica Cero</strong><br/>
       Desarrollador Odoo & Integrador API

@@ -73,3 +73,10 @@ Todo el contenido de la página (index.html, data/*.json) refleja la propuesta d
 
 ### Activos
 - Coloca tu foto en: assets/img/logica-cero.jpg (ideal 800x800, recortada cuadrada).
+
+### FAQ: Imagen de perfil
+- Ruta exacta local: c:\Users\demos\OneDrive\Documentos\PORTAFOLIO\netflify\assets\img\logica-cero.jpg
+- Formatos soportados: .jpg, .png (opcional .webp para mejores tamaños).
+- Si colocas PNG, usa assets/img/logica-cero.png; el <img> hará fallback automático desde .jpg a .png.
+- En deploy Linux/Netlify las rutas son case-sensitive: usa minúsculas y nombre exacto.
+- Elimina cualquier preload de la imagen en index.html para evitar 404 si cambia la extensión.
