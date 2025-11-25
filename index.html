@@ -5,200 +5,222 @@
   <title>Lógica Cero | Programación & Integraciones Odoo</title>
   <meta name="description" content="Desarrollador experto en Odoo, integración de sistemas vía API REST, arquitectura modular y optimización de ERP."/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#0b0f19"/>
   <meta name="robots" content="index,follow"/>
   <link rel="preload" href="assets/css/style.css" as="style"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-<header class="site-header">
-  <nav class="nav" aria-label="Principal">
-    <div class="brand">Lógica Cero</div>
-    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
-    <ul id="navMenu" class="nav-menu">
-      <li><a href="#introduccion">Introducción</a></li>
-      <li><a href="#equipo">Equipo</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#proyectos">Casos</a></li>
-      <li><a href="#integraciones">Integraciones</a></li>
-      <li><a href="#economia">Propuesta</a></li>
-      <li><a href="#contacto" class="btn-primario">Contacto</a></li>
-      <li><button id="themeToggle" aria-label="Cambiar tema">🌓</button></li>
-    </ul>
-  </nav>
-</header>
-
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <h1>“Lo que puedan imaginar, lo podemos crear.”</h1>
-    <p>Hecho con lógica, cero complicaciones. Desarrollo y arquitectura técnica en Odoo (v14–v18), integraciones API robustas y soluciones que superan límites tradicionales.</p>
-    <ul class="quick-highlights">
-      <li>Finanzas & visibilidad estratégica</li>
-      <li>Logística & trazabilidad avanzada</li>
-      <li>Integraciones multi-API resilientes</li>
-      <li>Optimización y refactor de código</li>
-    </ul>
-    <div class="cta-group">
-      <a href="#proyectos" class="btn-secundario">Ver Proyectos</a>
-      <a href="#contacto" class="btn-primario">Iniciar Colaboración</a>
-    </div>
-  </div>
-</section>
-
-<section id="sobre" class="panel" hidden></section>
-<section id="introduccion" class="panel">
-  <h2>Introducción & Propuesta de Valor</h2>
-  <p>Lógica Cero nace en Maracaibo, Zulia, para atender proyectos nacionales e internacionales con enfoque en programación Odoo e integraciones avanzadas. Superamos las barreras de los partners tradicionales al asumir retos técnicos complejos y convertir ideas en soluciones mantenibles y escalables.</p>
-  <blockquote>
-    <strong>Eslóganes:</strong> “Lo que puedan imaginar, lo podemos crear.” — “Hecho con lógica, cero complicaciones.”
-  </blockquote>
-</section>
-<section id="equipo" class="panel alt">
-  <h2>Génesis & Experiencia del Equipo</h2>
-  <figure class="profile-card fade-in">
-    <picture>
-      <source srcset="netflify/assets/img/logica-cero.webp" type="image/webp"/>
-      <source srcset="netflify/assets/img/logica-cero.png" type="image/png"/>
-      <source srcset="netflify/assets/img/logica-cero2.jpg" type="image/jpeg"/>
-      <img
-        src="netflify/assets/img/logica-cero2.jpg"
-        alt="Foto de perfil de Lógica Cero"
-        class="avatar"
-        loading="lazy"
-        width="560"
-        height="560"
-        onerror="this.onerror=null; this.src='assets/img/logica-cero.png';"
-      />
-    </picture>
-    <figcaption>
-      <strong>Lógica Cero</strong><br/>
-      Desarrollador Odoo & Integrador API
-    </figcaption>
-  </figure>
-  <ul class="cert-list">
-    <li>Consultoría funcional inicial: comprensión profunda de procesos.</li>
-    <li>Liderazgo técnico: visión end-to-end de implementaciones.</li>
-    <li>Programación especializada: dominio core Odoo v14–v18.</li>
-    <li>20+ implementaciones con módulos personalizados.</li>
-    <li>Diagnóstico y refactor de código heredado.</li>
-  </ul>
-</section>
-<section id="servicios" class="panel">
-  <h2>Servicios</h2>
-  <div class="grid bio-grid">
-    <div>
-      <h3>Desarrollo Odoo</h3>
-      <ul>
-        <li>Módulos a medida (finanzas, logística, operaciones)</li>
-        <li>Refactor y optimización (rendimiento, mantenibilidad)</li>
-        <li>Automatización y procesos recurrentes</li>
+  <!-- Accesibilidad: salto directo al contenido -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <div class="brand"><a href="#inicio" aria-label="Ir al inicio">Lógica Cero</a></div>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Casos</a></li>
+        <li><a href="#integraciones">Integraciones</a></li>
+        <li><a href="#economia">Propuesta</a></li>
+        <li><a href="#contacto" class="btn-primario">Contacto</a></li>
+        <li><button id="themeToggle" aria-label="Cambiar tema">🌓</button></li>
       </ul>
-    </div>
-    <div>
-      <h3>Integraciones & API</h3>
-      <ul>
-        <li>Diseño de conectores resilientes</li>
-        <li>Sincronización multi-sistema (stock, pedidos, flujo financiero)</li>
-        <li>Webhooks, OAuth2, firma y seguridad</li>
+    </nav>
+  </header>
+
+  <!-- Contenido principal agrupado para mejor navegación y móviles -->
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Lo que puedan imaginar, lo podemos crear.</h1>
+        <p>Hecho con lógica, cero complicaciones. Desarrollo y arquitectura técnica en Odoo (v14–v18), integraciones API robustas y soluciones que superan límites tradicionales.</p>
+        <ul class="quick-highlights">
+          <li>Finanzas & visibilidad estratégica</li>
+          <li>Logística & trazabilidad avanzada</li>
+          <li>Integraciones multi-API resilientes</li>
+          <li>Optimización y refactor de código</li>
+        </ul>
+        <div class="cta-group">
+          <a href="#proyectos" class="btn-secundario">Ver Casos de Uso</a>
+          <a href="#contacto" class="btn-primario">Iniciar Colaboración</a>
+        </div>
+
+        <!-- Foto del Fundador visible en el héroe -->
+        <figure class="profile-card fade-in" style="margin-top:1.25rem;">
+          <picture>
+            <source srcset="assets/img/logica-cero.webp" type="image/webp"/>
+            <source srcset="assets/img/logica-cero.png" type="image/png"/>
+            <source srcset="assets/img/logica-cero2.jpg" type="image/jpeg"/>
+            <img
+              src="assets/img/logica-cero2.jpg"
+              alt="Lógica Cero — Fundador y Desarrollador Odoo"
+              class="avatar"
+              width="560"
+              height="560"
+              loading="eager"
+              fetchpriority="high"
+              sizes="(max-width: 768px) 60vw, 320px"
+              onerror="this.onerror=null; this.src='assets/img/logica-cero.png';"
+            />
+          </picture>
+          <figcaption>
+            <strong>Lógica Cero</strong><br/>
+            Fundador & Desarrollador Odoo
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Secciones reorganizadas para estilo landing -->
+    <section id="introduccion" class="panel">
+      <h2>Introducción & Propuesta de Valor</h2>
+      <p>Lógica Cero nace en Maracaibo, Zulia, para atender proyectos nacionales e internacionales con enfoque en programación Odoo e integraciones avanzadas. Superamos las barreras de los partners tradicionales al asumir retos técnicos complejos y convertir ideas en soluciones mantenibles y escalables.</p>
+      <blockquote>
+        <strong>Eslóganes:</strong> “Lo que puedan imaginar, lo podemos crear.” — “Hecho con lógica, cero complicaciones.”
+      </blockquote>
+    </section>
+
+    <section id="equipo" class="panel alt">
+      <h2>Fundador & Experiencia</h2>
+      <!-- Se elimina la foto aquí para evitar duplicado; se mantiene foco en credenciales -->
+      <ul class="cert-list">
+        <li>Consultoría funcional inicial: comprensión profunda de procesos.</li>
+        <li>Liderazgo técnico: visión end-to-end de implementaciones.</li>
+        <li>Programación especializada: dominio core Odoo v14–v18.</li>
+        <li>20+ implementaciones con módulos personalizados.</li>
+        <li>Diagnóstico y refactor de código heredado.</li>
       </ul>
-    </div>
-    <div>
-      <h3>Observabilidad & Calidad</h3>
-      <ul>
-        <li>Métricas, trazas y alertas</li>
-        <li>Pruebas unitarias e integrales</li>
-        <li>Documentación técnica clara</li>
+    </section>
+
+    <section id="servicios" class="panel">
+      <h2>Servicios</h2>
+      <div class="grid bio-grid">
+        <div>
+          <h3>Desarrollo Odoo</h3>
+          <ul>
+            <li>Módulos a medida (finanzas, logística, operaciones)</li>
+            <li>Refactor y optimización (rendimiento, mantenibilidad)</li>
+            <li>Automatización y procesos recurrentes</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Integraciones & API</h3>
+          <ul>
+            <li>Diseño de conectores resilientes</li>
+            <li>Sincronización multi-sistema (stock, pedidos, flujo financiero)</li>
+            <li>Webhooks, OAuth2, firma y seguridad</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Observabilidad & Calidad</h3>
+          <ul>
+            <li>Métricas, trazas y alertas</li>
+            <li>Pruebas unitarias e integrales</li>
+            <li>Documentación técnica clara</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="panel alt">
+      <h2>Stack & Competencias</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Odoo Core</h3>
+          <p>Módulos, ORM, seguridad, herencia, reportes.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Frontend Odoo</h3>
+          <p>QWeb, OWL, JS framework interno, assets pipeline.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Integraciones REST</h3>
+          <p>Auth (OAuth2, JWT, API Keys), rate limiting, resiliencia.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Base de Datos</h3>
+          <p>PostgreSQL tunning, índices, analítica.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Arquitectura</h3>
+          <p>Microservicios, colas (RabbitMQ, Redis), eventos.</p>
+        </div>
+        <div class="skill-card">
+          <h3>DevOps</h3>
+          <p>Containerización, CI/CD, monitoreo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="panel">
+      <h2>Casos de uso</h2>
+      <p>Soluciones reales que priorizan valor, rendimiento y mantenibilidad.</p>
+      <div class="filtros">
+        <button data-filter="all" class="activo">Todos</button>
+        <button data-filter="finanzas">Finanzas</button>
+        <button data-filter="logistica">Logística</button>
+        <button data-filter="integraciones">Integraciones</button>
+        <button data-filter="optimización">Optimización</button>
+      </div>
+      <div id="projectsContainer" class="cards-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="integraciones" class="panel alt">
+      <h2>Integraciones & Conectores</h2>
+      <p>Conectores robustos para sincronizar datos entre Odoo y sistemas externos con confiabilidad y baja latencia.</p>
+      <div id="integrationsContainer" class="timeline"></div>
+    </section>
+
+    <section id="economia" class="panel alt">
+      <h2>Propuesta Económica & Soporte</h2>
+      <p>Tarifa promocional de lanzamiento: <strong>USD 15 / hora</strong> para personalización y programación avanzada.</p>
+      <p>Apoyo contable experto externo para garantizar cumplimiento fiscal y mejores prácticas en módulos financieros.</p>
+      <ul class="cert-list">
+        <li>Transparencia y documentación</li>
+        <li>Flexibilidad de un emprendimiento + experiencia sénior</li>
+        <li>Escalabilidad desde el inicio</li>
       </ul>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="stack" class="panel alt">
-  <h2>Stack & Competencias</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Odoo Core</h3>
-      <p>Módulos, ORM, seguridad, herencia, reportes.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Frontend Odoo</h3>
-      <p>QWeb, OWL, JS framework interno, assets pipeline.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Integraciones REST</h3>
-      <p>Auth (OAuth2, JWT, API Keys), rate limiting, resiliencia.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Base de Datos</h3>
-      <p>PostgreSQL tunning, índices, analítica.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Arquitectura</h3>
-      <p>Microservicios, colas (RabbitMQ, Redis), eventos.</p>
-    </div>
-    <div class="skill-card">
-      <h3>DevOps</h3>
-      <p>Containerización, CI/CD, monitoreo.</p>
-    </div>
-  </div>
-</section>
+    <section id="contacto" class="panel contacto">
+      <h2>Contacto</h2>
+      <p>¿Necesitas integrar sistemas, optimizar procesos o crear módulos complejos? Escríbenos y te responderemos con una propuesta clara.</p>
+      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact"/>
+        <!-- Honeypot antispam para Netlify -->
+        <p class="visually-hidden" aria-hidden="true">
+          <label>No completar: <input name="bot-field"/></label>
+        </p>
 
-<section id="proyectos" class="panel">
-  <h2>Casos Representativos</h2>
-  <p>Ejemplos de soluciones que demuestran profundidad técnica y enfoque en valor real.</p>
-  <div class="filtros">
-    <button data-filter="all" class="activo">Todos</button>
-    <button data-filter="finanzas">Finanzas</button>
-    <button data-filter="logistica">Logística</button>
-    <button data-filter="integraciones">Integraciones</button>
-    <button data-filter="optimización">Optimización</button>
-  </div>
-  <div id="projectsContainer" class="cards-grid" aria-live="polite"></div>
-</section>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required/>
+        </div>
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp (opcional)</label>
+          <input id="whatsapp" name="whatsapp" inputmode="tel" placeholder="+58 4XX XXX XXXX"/>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primario">Enviar</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+      <p style="font-size:.75rem;opacity:.6;">Tarifa actual: USD 15/h — Incluye revisión técnica y soporte contable especializado.</p>
+    </section>
+  </main>
 
-<section id="integraciones" class="panel alt">
-  <h2>Integraciones & Conectores</h2>
-  <p>Conectores robustos para sincronizar datos entre Odoo y sistemas externos con confiabilidad y baja latencia.</p>
-  <div id="integrationsContainer" class="timeline"></div>
-</section>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Lógica Cero. Desarrollo Odoo & Integraciones avanzadas.</p>
+  </footer>
 
-<section id="economia" class="panel alt">
-  <h2>Propuesta Económica & Soporte</h2>
-  <p>Tarifa promocional de lanzamiento: <strong>USD 15 / hora</strong> para personalización y programación avanzada.</p>
-  <p>Apoyo contable experto externo para garantizar cumplimiento fiscal y mejores prácticas en módulos financieros.</p>
-  <ul class="cert-list">
-    <li>Transparencia y documentación</li>
-    <li>Flexibilidad de un emprendimiento + experiencia sénior</li>
-    <li>Escalabilidad desde el inicio</li>
-  </ul>
-</section>
-
-<section id="contacto" class="panel contacto">
-  <h2>Contacto</h2>
-  <p>¿Necesitas integrar sistemas, optimizar procesos o crear módulos complejos? Escríbenos y te responderemos con una propuesta clara.</p>
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact"/>
-    <div class="form-group">
-      <label for="nombre">Nombre</label>
-      <input id="nombre" name="nombre" required/>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required/>
-    </div>
-    <div class="form-group">
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn-primario">Enviar</button>
-    <p id="formStatus" role="status" aria-live="polite"></p>
-  </form>
-  <p style="font-size:.75rem;opacity:.6;">Tarifa actual: USD 15/h — Incluye revisión técnica y soporte contable especializado.</p>
-</section>
-
-<footer class="site-footer">
-  <p>&copy; <span id="year"></span> Lógica Cero. Desarrollo Odoo & Integraciones avanzadas.</p>
-</footer>
-
-<script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
