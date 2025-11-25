@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Optimización Backend Odoo",
+    "description": "Refactor de módulos heredados, reducción de tiempo de respuesta 40%, implementación de caché selectivo y lazy loads.",
+    "categories": ["odoo","performance"],
+    "stack": ["Python","PostgreSQL","Odoo ORM","Redis"]
+  },
+  {
+    "title": "Conector ERP - E-commerce",
+    "description": "Sincronización de catálogo, stock y pedidos con manejo de colisiones y reconcilio automático.",
+    "categories": ["odoo","api"],
+    "stack": ["REST","Webhooks","Message Queue","Odoo"]
+  },
+  {
+    "title": "Pipeline Facturación Electrónica",
+    "description": "Integración con API gubernamental, colas de reintento y firma digital.",
+    "categories": ["api","odoo"],
+    "stack": ["Python","Cryptography","REST","Celery"]
+  },
+  {
+    "title": "Monitor de Integraciones",
+    "description": "Dashboard de métricas y alertas (latencia, throughput, fallos) + trazas correlacionadas.",
+    "categories": ["performance","api"],
+    "stack": ["Prometheus","Grafana","Fluentd","PostgreSQL"]
+  },
+  {
+    "title": "Módulo de Suscripciones",
+    "description": "Modelo de negocio recurrente con prorrateos y renovaciones automáticas escalables.",
+    "categories": ["odoo"],
+    "stack": ["Odoo","Python","QWeb","Stripe API"]
+  }
+]

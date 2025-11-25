@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Experto Odoo & Integrador API | Portafolio</title>
+  <meta name="description" content="Desarrollador experto en Odoo, integración de sistemas vía API REST, arquitectura modular y optimización de ERP."/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow"/>
+  <link rel="preload" href="assets/css/style.css" as="style"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Principal">
+    <div class="brand">Odoo/API Expert</div>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+    <ul id="navMenu" class="nav-menu">
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#integraciones">Integraciones</a></li>
+      <li><a href="#metodologia">Metodología</a></li>
+      <li><a href="#certificaciones">Certificaciones</a></li>
+      <li><a href="#contacto" class="btn-primario">Contacto</a></li>
+      <li><button id="themeToggle" aria-label="Cambiar tema">🌓</button></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>Arquitecto Odoo & Integrador de Sistemas</h1>
+    <p>Diseño, extiendo y conecto ecosistemas ERP escalables mediante API REST, colas de mensajes y microservicios.</p>
+    <div class="cta-group">
+      <a href="#proyectos" class="btn-secundario">Ver Proyectos</a>
+      <a href="#contacto" class="btn-primario">Iniciar Colaboración</a>
+    </div>
+    <ul class="quick-highlights">
+      <li>Optimización de rendimiento Odoo</li>
+      <li>Integraciones omnicanal</li>
+      <li>Automatización de procesos</li>
+    </ul>
+  </div>
+</section>
+
+<section id="sobre" class="panel">
+  <h2>Sobre mí</h2>
+  <p>Desarrollador especializado en el ecosistema Odoo (backend y frontend: Python, ORM, QWeb, OWL) y en integrar plataformas externas (e-commerce, logística, pagos, BI) mediante API REST, Webhooks y mensajería asíncrona.</p>
+  <div class="grid bio-grid">
+    <div>
+      <h3>Foco Técnico</h3>
+      <ul>
+        <li>Refactorización y modularización</li>
+        <li>Multi-company / Multi-tenant</li>
+        <li>Escalabilidad horizontal</li>
+        <li>Control de calidad (tests + CI/CD)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Valor Diferencial</h3>
+      <p>Transformo requerimientos complejos en soluciones mantenibles: integraciones limpias, tiempos de respuesta reducidos y trazabilidad completa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="panel alt">
+  <h2>Stack & Competencias</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Odoo Core</h3>
+      <p>Módulos, ORM, seguridad, herencia, reportes.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Frontend Odoo</h3>
+      <p>QWeb, OWL, JS framework interno, assets pipeline.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Integraciones REST</h3>
+      <p>Auth (OAuth2, JWT, API Keys), rate limiting, resiliencia.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Base de Datos</h3>
+      <p>PostgreSQL tunning, índices, analítica.</p>
+    </div>
+    <div class="skill-card">
+      <h3>Arquitectura</h3>
+      <p>Microservicios, colas (RabbitMQ, Redis), eventos.</p>
+    </div>
+    <div class="skill-card">
+      <h3>DevOps</h3>
+      <p>Containerización, CI/CD, monitoreo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="panel">
+  <h2>Proyectos Destacados</h2>
+  <div class="filtros">
+    <button data-filter="all" class="activo">Todos</button>
+    <button data-filter="odoo">Odoo</button>
+    <button data-filter="api">API</button>
+    <button data-filter="performance">Performance</button>
+  </div>
+  <div id="projectsContainer" class="cards-grid" aria-live="polite"></div>
+</section>
+
+<section id="integraciones" class="panel alt">
+  <h2>Integraciones & Conectores</h2>
+  <p>Conectores robustos para sincronizar datos entre Odoo y sistemas externos con confiabilidad y baja latencia.</p>
+  <div id="integrationsContainer" class="timeline"></div>
+</section>
+
+<section id="metodologia" class="panel">
+  <h2>Metodología</h2>
+  <ol class="steps">
+    <li><strong>Descubrimiento:</strong> Mapeo de procesos y flujos críticos.</li>
+    <li><strong>Diseño técnico:</strong> Diagramas de entidades, endpoints y eventos.</li>
+    <li><strong>Implementación incremental:</strong> Branching, code reviews.</li>
+    <li><strong>Pruebas:</strong> Unitarias, integrales y de carga.</li>
+    <li><strong>Observabilidad:</strong> Métricas, trazas, alertas.</li>
+    <li><strong>Escalado:</strong> Optimización y automatización.</li>
+  </ol>
+</section>
+
+<section id="certificaciones" class="panel alt">
+  <h2>Certificaciones & Formación</h2>
+  <ul class="cert-list">
+    <li>Odoo Functional & Technical (varias versiones)</li>
+    <li>PostgreSQL Performance Workshop</li>
+    <li>Arquitectura REST y Seguridad Avanzada</li>
+    <li>Docker & CI/CD Pipelines</li>
+  </ul>
+</section>
+
+<section id="contacto" class="panel contacto">
+  <h2>Contacto</h2>
+  <p>¿Necesitas optimizar tu ERP o integrar plataformas externas? Envíame un mensaje.</p>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact"/>
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" required/>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required/>
+    </div>
+    <div class="form-group">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn-primario">Enviar</button>
+    <p id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Odoo/API Expert. Código limpio, integraciones seguras.</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

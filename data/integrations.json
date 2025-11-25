@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Pasarela de Pagos",
+    "summary": "Sincronización de órdenes, conciliación automática, manejo de devoluciones y fraudes.",
+    "protocols": ["REST","OAuth2","Webhooks"]
+  },
+  {
+    "name": "Logística & Tracking",
+    "summary": "Cálculo dinámico de tarifas, actualización de estados y eventos de entrega.",
+    "protocols": ["REST","Webhook","HMAC"]
+  },
+  {
+    "name": "BI & Data Warehouse",
+    "summary": "Extracción incremental y normalización hacia esquema analítico estrella.",
+    "protocols": ["ETL","Batch","Incremental"]
+  },
+  {
+    "name": "Marketplace Multicanal",
+    "summary": "Unificación de pedidos, stock y precios con reglas de prioridad.",
+    "protocols": ["REST","Rate Limit Handling","Retry"]
+  }
+]
